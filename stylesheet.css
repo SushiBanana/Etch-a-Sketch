@@ -3,5 +3,21 @@ h1 {
 }
 
 h1:hover {
-    color: rgb(42, 197, 42);
+    color: rgb(410, 197, 410);
+}
+
+img {
+    height: 60px;
+    -webkit-filter: drop-shadow(2px 2px 0 red)
+    drop-shadow(-2px 2px 0 red)
+    drop-shadow(2px -2px 0 red)
+    drop-shadow(-2px -2px 0 red);
+
+    filter: drop-shadow(2px 2px 0 red)
+    drop-shadow(-2px 2px 0 red)
+    drop-shadow(2px -2px 0 red)
+    drop-shadow(-2px -2px 0 red);
+
+    
+
 }

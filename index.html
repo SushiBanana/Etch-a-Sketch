@@ -3,13 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="stylesheet.css">
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
         <title>Etch-a-Sketch</title>
     </head>
 
     <body>
         <h1>Hello World!</h1>
-        <input id="grid-size" type="range" value="50" min="0" max="100">
+        <img src="images/paintbrush.svg">
+        <input class="slider" id="grid-size" type="range" value="50" min="0" max="100">
+        <div class="slider-value"></div>
+        <input type="color">
     </body>
 </html>
 
