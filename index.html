@@ -8,11 +8,33 @@
     </head>
 
     <body>
-        <h1>Hello World!</h1>
-        <img src="images/paintbrush.svg">
-        <input class="slider" id="grid-size" type="range" value="50" min="0" max="100">
-        <div class="slider-value"></div>
-        <input type="color">
+        <header>Etch-a-Sketch</header>
+
+        <div class="content-container">
+            <div id="controls">
+                <div class="grid">Grid Size</div>
+                    <input class="slider" id="grid-size" type="range" value="20" min="2" max="40">
+                    <div class="slider-value"></div>
+
+                <div class="paint"></div>
+                    <div>Change paintbrush colour</div>
+                    <img class="paintbrush" src="images/paintbrush.svg">
+                    <input class="color-picker" type="color">
+                   
+                <div class="background"></div>
+                    <div>Change background colour</div>
+                    <input class="color-picker" type="color">
+                    
+
+                <div class="erase"></div>
+                    <button class="eraser">eraser</button>
+            </div>
+
+            <div class="grid-container">hi</div>
+        </div>
+
+        <footer>Made by SushiBanana</footer>
+
     </body>
 </html>
 
