@@ -35,7 +35,7 @@ createGrid(slider.value)
 
 function createGrid(gridsize) {
     for (i=0 ; i < gridsize ; i++) {
-        for (j=0 ; j < gridsize ; i++) {
+        for (j=0 ; j < gridsize ; j++) {
             gridContainer.appendChild(createDiv(gridContainer.clientWidth / gridsize))
         }
     }

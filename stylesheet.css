@@ -100,10 +100,12 @@ input.color-picker {
     height: 50px;
     width: 50px;
     border: 2px solid grey;
+    border-radius: 5px;
     padding: none;
     margin: none;  
 }
 
 .square {
-    border: 2px solid black;
+    border: 1px solid black;
+    box-sizing: border-box;
 }
