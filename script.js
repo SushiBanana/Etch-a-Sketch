@@ -3,6 +3,7 @@ const sliderValue = document.querySelector(".slider-value")
 sliderValue.textContent = `${slider.value} x ${slider.value}`
 const paintbrush = document.querySelector(".paintbrush")
 const colorPicker = document.querySelector(".color-picker")
+const gridContainer = document.querySelector(".grid-container")
 
 slider.oninput = function () {
     sliderValue.textContent = `${this.value} x ${this.value}`
@@ -22,3 +23,20 @@ colorPicker.oninput = function () {
     `)
 }
 
+function createDiv(squareSize) {
+    let div = document.createElement("div")
+    div.classList.add('square')
+    div.style.height = `${squareSize}px`
+    div.style.width = `${squareSize}px`
+    return div;
+}
+
+createGrid(slider.value)
+
+function createGrid(gridsize) {
+    for (i=0 ; i < gridsize ; i++) {
+        for (j=0 ; j < gridsize ; i++) {
+            gridContainer.appendChild(createDiv(gridContainer.clientWidth / gridsize))
+        }
+    }
+}

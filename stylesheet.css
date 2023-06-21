@@ -4,6 +4,7 @@ body {
     font-family: "Verdana";
     flex-direction: column;
     justify-content: space-between;
+    background-color: #ebeae7;
 
 }
 
@@ -66,6 +67,9 @@ footer {
     height: 50vw;
     width: 50vw;
     margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 #controls {
@@ -89,4 +93,17 @@ button.eraser {
     display: flex;
     align-items: center;
     flex-direction: row;
+}
+
+input.color-picker {
+    cursor: pointer; 
+    height: 50px;
+    width: 50px;
+    border: 2px solid grey;
+    padding: none;
+    margin: none;  
+}
+
+.square {
+    border: 2px solid black;
 }
