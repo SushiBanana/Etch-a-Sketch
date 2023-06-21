@@ -4,6 +4,7 @@ sliderValue.textContent = `${slider.value} x ${slider.value}`
 const paintbrush = document.querySelector(".paintbrush")
 const colorPicker = document.querySelector(".color-picker")
 const gridContainer = document.querySelector(".grid-container")
+const applyChanges = document.querySelector(".apply-changes")
 
 slider.oninput = function () {
     sliderValue.textContent = `${this.value} x ${this.value}`
@@ -40,3 +41,12 @@ function createGrid(gridsize) {
         }
     }
 }
+
+function apply() {
+    while (gridContainer.firstElementChild) {
+        gridContainer.lastElementChild.remove()
+    }
+    createGrid(slider.value)
+}
+
+applyChanges.addEventListener("click", apply)
