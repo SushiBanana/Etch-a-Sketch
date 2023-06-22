@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "ImportFont";
+    src: url(font/LuckiestGuy-Regular.ttf);
+}
+
 body {
     min-height: 98vh;
     display: flex;
@@ -6,6 +11,24 @@ body {
     justify-content: space-between;
     background-color: #ebeae7;
 
+}
+
+header {
+    font-size: 40px;
+    color: #7d4329;
+    font-family: "ImportFont";
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img{
+    height: 30px;
+    width: auto;
+    margin: 5px;
 }
 
 .paintbrush {
@@ -24,10 +47,10 @@ body {
 
 .slider {
     -webkit-appearance: none;
-    width: 120px;
+    width: 200px;
     height: 10px;
     border-radius: 5px;  
-    background: #d6966f;
+    background: #caad99;
     opacity: 0.7;
 }
   
@@ -64,8 +87,8 @@ footer {
 .grid-container {
     border: 2px solid black;
     border-radius: 8px;
-    height: 50vw;
-    width: 50vw;
+    height: 48vw;
+    width: 48vw;
     margin-left: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -108,4 +131,5 @@ input.color-picker {
 .square {
     border: 1px solid black;
     box-sizing: border-box;
+    border-radius: 3px;
 }
