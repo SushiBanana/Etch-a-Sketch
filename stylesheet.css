@@ -87,8 +87,8 @@ footer {
 .grid-container {
     border: 2px solid black;
     border-radius: 8px;
-    height: 48vw;
-    width: 48vw;
+    height: 70rem;
+    width: 70rem;
     margin-left: 30px;
     display: flex;
     flex-wrap: wrap;
