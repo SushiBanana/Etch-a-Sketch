@@ -10,11 +10,12 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background-color: #ebeae7;
+    font-size: 20px;
 
 }
 
 header {
-    font-size: 40px;
+    font-size: 41px;
     color: #7d4329;
     font-family: "ImportFont";
 }
@@ -47,17 +48,17 @@ footer img{
 
 .slider {
     -webkit-appearance: none;
-    width: 200px;
+    width: 250px;
     height: 10px;
     border-radius: 5px;  
-    background: #caad99;
+    background: #ae7b5a;
     opacity: 0.7;
 }
   
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 30px;
+    width: 40px;
     height: 40px;
     border: 0;
     background: url('images/cat.png');
@@ -102,11 +103,6 @@ footer {
     gap: 10px;
 }
 
-button.eraser {
-    height: 20px;
-    width: 70px;
-}
-
 .grid {
     display: flex;
 
@@ -118,12 +114,13 @@ button.eraser {
     flex-direction: row;
 }
 
-input.color-picker {
+input.color-picker,
+input.change-bg {
     cursor: pointer; 
     height: 50px;
     width: 50px;
     border: 2px solid grey;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: none;
     margin: none;  
 }
@@ -131,5 +128,28 @@ input.color-picker {
 .square {
     border: 1px solid black;
     box-sizing: border-box;
-    border-radius: 3px;
+    border-radius: 5px;
 }
+
+button {
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #d3a26e;
+    cursor: pointer;
+}
+
+.eraser {
+    cursor: pointer;
+    box-shadow: 10px 5px 1px black;
+    transition: all 0.3s;
+}
+
+.eraser:active,
+.eraser.active {
+    color: black;
+    box-shadow: none;
+    transition: all 0.3s;
+    background-color: #f59e40;
+    color: white;
+}
+

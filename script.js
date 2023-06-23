@@ -5,6 +5,8 @@ const paintbrush = document.querySelector(".paintbrush")
 const colorPicker = document.querySelector(".color-picker")
 const gridContainer = document.querySelector(".grid-container")
 const applyChanges = document.querySelector(".apply-changes")
+const eraser = document.querySelector(".eraser")
+const changeBg = document.querySelector(".change-bg")
 
 slider.oninput = function () {
     sliderValue.textContent = `${this.value} x ${this.value}`
@@ -22,6 +24,10 @@ colorPicker.oninput = function () {
     drop-shadow(1px -1px 0 ${this.value})
     drop-shadow(-1px -1px 0 ${this.value});
     `)
+}
+
+changeBg.oninput = function () {
+    gridContainer.style.backgroundColor = this.value
 }
 
 function createDiv(squareSize) {
@@ -54,6 +60,30 @@ applyChanges.addEventListener("click", apply);
 gridContainer.addEventListener("mouseover", (event) => {
     if (event.target.matches(".square")) {
         event.target.style.backgroundColor = colorPicker.value;
+        event.target.style.cursor = "crosshair";
+    }
+})
+
+eraser.addEventListener("click", function() {
+    eraser.classList.toggle("active")
+})
+
+let isEraserActive = false;
+
+eraser.addEventListener("click", ()=> {
+    isEraserActive = !isEraserActive
+})
+
+if (isEraserActive) {
+    eraser.classList.add("active")
+} else {
+    eraser.classList.remove("active")
+}
+
+
+gridContainer.addEventListener("mouseover", function(event) {
+    if (isEraserActive && event.target.matches(".square")) {
+        event.target.style.backgroundColor = "";
         event.target.style.cursor = "crosshair";
     }
 })
