@@ -35,15 +35,15 @@ footer img{
 
 .paintbrush {
     height: 60px;
-    -webkit-filter: drop-shadow(1px 1px 0 black)
-    drop-shadow(-1px 1px 0 black)
-    drop-shadow(1px -1px 0 black)
-    drop-shadow(-1px -1px 0 black);
+    -webkit-filter: drop-shadow(1px 1px 0 #caad99)
+    drop-shadow(-1px 1px 0 #caad99)
+    drop-shadow(1px -1px 0 #caad99)
+    drop-shadow(-1px -1px 0 #caad99);
 
-    filter: drop-shadow(1px 1px 0 black)
-    drop-shadow(-1px 1px 0 black)
-    drop-shadow(1px -1px 0 black)
-    drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(1px 1px 0 #caad99)
+    drop-shadow(-1px 1px 0 #caad99)
+    drop-shadow(1px -1px 0 #caad99)
+    drop-shadow(-1px -1px 0 #caad99);
     margin-right: auto;
 }
 
