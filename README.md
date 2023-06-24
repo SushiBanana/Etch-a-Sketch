@@ -1,7 +1,9 @@
 # Etch-a-Sketch
+Live demo of Etch-a-Sketch can be found [here](https://sushibanana.github.io/Etch-a-Sketch/)
+
 ![Screenshot of the Etch-a-Sketch website](https://raw.githubusercontent.com/SushiBanana/Etch-a-Sketch/main/images/websiteSc.png)
 
-Theres a steep learning curve when attempting this project which the Odin Project doesn't touch on (which is completely normal btw! Learning is best done without spoon-feeding)
+There's a steep learning curve when attempting this project which the Odin Project doesn't touch on (which is completely normal btw! Learning is best done without spoon-feeding)
 If you're from the Odin Project and are wondering where to start here's a few things I wish I knew:
 
 1. You'll have to create 2 functions to append the squares to the grid. The functions are called `createGrid` and `createDiv`.
@@ -10,7 +12,7 @@ If you're from the Odin Project and are wondering where to start here's a few th
 
 3. In the `createDiv` function, make sure to assign the squares to a class with `square.classList.add` for changing the color or design.
 
-4. Creating the grid container was a bit of a hassle, sometimes all the squares would fit into the `gridContainer` perfectly on my laptop and then when I tried it on the monitor it would overflow. I noticed changing the height and width of my gridContainer from vw to rem solved this problem.
+4. Creating the `gridContainer` was a bit of a hassle, sometimes all the squares would fit into the `gridContainer` perfectly on my laptop and then when I tried it on the monitor it would overflow. I noticed changing the height and width of my `gridContainer` from `vw` to `rem` solved this problem.
 
 5. Make sure to revise on bubbling, propogation and capturing which was previously mentioned on Odin's website as this knowledge was needed for this project.
 
