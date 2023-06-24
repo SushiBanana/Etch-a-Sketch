@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background-color: #ebeae7;
-    font-size: 20px;
+    font-size: 1rem;
 
 }
 
@@ -18,6 +18,7 @@ header {
     font-size: 41px;
     color: #7d4329;
     font-family: "ImportFont";
+    
 }
 
 footer {
@@ -58,8 +59,8 @@ footer img{
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border: 0;
     background: url('images/cat.png');
     background-size: contain;
@@ -88,8 +89,8 @@ footer {
 .grid-container {
     border: 2px solid black;
     border-radius: 8px;
-    height: 70rem;
-    width: 70rem;
+    height: 40rem;
+    width: 40rem;
     margin-left: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -132,7 +133,7 @@ input.change-bg {
 }
 
 button {
-    font-size: 20px;
+    font-size: 1em;
     border-radius: 5px;
     background-color: #d3a26e;
     cursor: pointer;
@@ -140,11 +141,10 @@ button {
 
 .eraser {
     cursor: pointer;
-    box-shadow: 10px 5px 1px black;
+    box-shadow: 6px 4px black;
     transition: all 0.3s;
 }
 
-.eraser:active,
 .eraser.active {
     color: black;
     box-shadow: none;
@@ -153,3 +153,7 @@ button {
     color: white;
 }
 
+.apply-changes:active{
+    background-color: #f59e40;
+    color: white;
+}
