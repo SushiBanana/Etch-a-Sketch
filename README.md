@@ -1,5 +1,5 @@
 # Etch-a-Sketch
-![Screenshot of the Etch-a-Sketch website](images/websiteSc.png)
+![Screenshot of the Etch-a-Sketch website](https://raw.githubusercontent.com/SushiBanana/Etch-a-Sketch/main/images/websiteSc.png)
 
 Theres a steep learning curve when attempting this project which the Odin Project doesn't touch on (which is completely normal btw! Learning is best done without spoon-feeding)
 If you're from the Odin Project and are wondering where to start here's a few things I wish I knew:
