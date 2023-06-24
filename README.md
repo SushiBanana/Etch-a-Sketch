@@ -1,5 +1,5 @@
 # Etch-a-Sketch
-##Live demo of Etch-a-Sketch can be found [here](https://sushibanana.github.io/Etch-a-Sketch/)
+## Live demo of Etch-a-Sketch can be found [here](https://sushibanana.github.io/Etch-a-Sketch/)
 
 ![Screenshot of the Etch-a-Sketch website](https://raw.githubusercontent.com/SushiBanana/Etch-a-Sketch/main/images/websiteSc.png)
 
