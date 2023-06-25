@@ -33,18 +33,11 @@ footer img{
     margin: 5px;
 }
 
-.paintbrush {
-    height: 60px;
-    -webkit-filter: drop-shadow(1px 1px 0 #caad99)
-    drop-shadow(-1px 1px 0 #caad99)
-    drop-shadow(1px -1px 0 #caad99)
-    drop-shadow(-1px -1px 0 #caad99);
-
-    filter: drop-shadow(1px 1px 0 #caad99)
-    drop-shadow(-1px 1px 0 #caad99)
-    drop-shadow(1px -1px 0 #caad99)
-    drop-shadow(-1px -1px 0 #caad99);
+.fa-paintbrush {
+    font-size: 40px;
+    color: #caad99;
     margin-right: auto;
+    text-shadow: 0 0 4px black;
 }
 
 .slider {
